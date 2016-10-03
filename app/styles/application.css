@@ -1,0 +1,33 @@
+.Card {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.Card-left, .Card-right {
+  position: absolute;
+}
+
+.Card-left {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.Card-right {
+  top: 0;
+  left: 80px;
+  width: 19px;
+  height: 100px; 
+  border-left: 1px solid black;
+}
+
+.Card.right .Card-right {
+  left: 20px;
+  width: 79px;
+}
