@@ -10,11 +10,16 @@ export default (state = [], action) => {
 class Card {
 	constructor() {
 		this.leftSide = getColor();
-		this.rightSide = getColor();
+		this.rightSide = getColor({ not: this.leftSide });
 	}
 }
 
-const colors = [ "red", "orange", "yellow" ];
-function getColor() {
-	return colors[Math.floor(Math.random()*colors.length)];
+const colors = [ "blue", "green", "yellow" ];
+function getColor({ not = "" } = {}) {
+	let result = null;
+
+	while (result === null || result === not) {
+		result = colors[Math.floor(Math.random()*colors.length)];	
+	}
+	return result;
 }

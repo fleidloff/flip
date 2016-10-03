@@ -6,12 +6,6 @@ export default () => (
 		<div className="solution">
 			<div className="black" />
 			<div className="black" />
-			<div className="black" />
-			<div className="black" />
-		</div>
-		<div className="solution">
-			<div className="black" />
-			<div className="black" />
 			<br />
 			<div className="black" />
 			<div className="black" />
@@ -50,17 +44,6 @@ export default () => (
 			<div className="white" />
 			<div className="black" />
 			<div className="white" />
-		</div>
-		<div className="solution">
-			<div className="white" />
-			<div className="white" />
-			<div className="white" />
-			<div className="black" />
-			<br />
-			<div className="black" />
-			<div className="black" />
-			<div className="black" />
-			<div className="black" />
 		</div>
 	</div>
 );
